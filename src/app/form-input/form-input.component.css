@@ -1,0 +1,38 @@
+.form-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  padding: .5em 1.25em;
+  border: 1px solid var(--cinza-claro);
+  border-radius: 5px;
+  font-size: 1.05em;
+}
+
+textarea {
+  all: unset;
+  padding: .5em 1em;
+  width: 100%;
+  border: 1px solid var(--cinza-claro);
+  border-radius: 5px;
+  font-size: 1.05em;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 1px solid var(--cinza-claro);
+  border-radius: 5px;
+  font-size: 1.05em;
+  padding: .5em 1em;
+  width: 100%;
+  cursor: pointer;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="black"><path d="M5 7l5 5 5-5H5z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 15px;
+}
+

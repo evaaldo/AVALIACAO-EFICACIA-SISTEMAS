@@ -1,0 +1,25 @@
+@if (inputType == "text")
+{
+  <div class="form-group">
+    <input type="text" name="{{ inputId }}" id="{{ inputId }}" [placeholder]="placeholder">
+  </div>
+}
+@else if (inputType == "textarea")
+{
+  <div class="form-group">
+    <textarea rows="5" name="{{ inputId }}" id="{{ inputId }}" [placeholder]="placeholder"></textarea>
+  </div>
+}
+@else if (inputType == "select")
+{
+  <div class="form-group">
+    <select name="{{ inputId }}" id="{{ inputId }}">
+      <option value="">Label</option>
+      @for (selectValue of selectValues; track selectValue.value)
+      {
+        <option value="selectValue.value">selectValue.text</option>
+        <option value="selectValue.value">selectValue.text</option>
+      }
+    </select>
+  </div>
+}
