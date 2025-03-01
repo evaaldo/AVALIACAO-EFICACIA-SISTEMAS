@@ -1,0 +1,17 @@
+button {
+  border: none;
+  border-radius: 5px;
+  padding: .75em 4em;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: .35s
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.success {
+  background-color: var(--azul);
+  color: var(--branco);
+}

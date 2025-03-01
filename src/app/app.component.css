@@ -7,16 +7,28 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 6em;
 }
 
 main form {
   display: flex;
+  flex-direction: column;
   gap: 3em;
 }
 
-main form .col {
+main form .cols {
+  display: flex;
+  gap: 1.5em;
+}
+
+main form .cols .col {
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 1.5em;
+}
+
+main form .actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
 }
