@@ -9,6 +9,7 @@ input {
   border: 1px solid var(--cinza-claro);
   border-radius: 5px;
   font-size: 1.05em;
+  width: 13vw;
 }
 
 textarea {
