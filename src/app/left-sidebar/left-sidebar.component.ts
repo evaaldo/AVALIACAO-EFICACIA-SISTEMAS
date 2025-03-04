@@ -10,4 +10,8 @@ import { Component } from '@angular/core';
 })
 export class LeftSidebarComponent {
   isClosed: boolean = true;
+
+  onToggleSidebar() {
+    this.isClosed = !this.isClosed;
+  }
 }

@@ -2,9 +2,9 @@
   <div class="sidebar-actions">
     @if (!isClosed) {
       <h2><img src="../../assets/white-label.png"> Sua empresa</h2>
-      <button><i class="bx bxs-x-square"></i></button>
+      <button (click)="onToggleSidebar()"><i class="bx bxs-x-square"></i></button>
     } @else {
-      <button><i class='bx bx-menu'></i></button>
+      <button (click)="onToggleSidebar()"><i class='bx bx-menu'></i></button>
     }
   </div>
   @if (!isClosed) {
