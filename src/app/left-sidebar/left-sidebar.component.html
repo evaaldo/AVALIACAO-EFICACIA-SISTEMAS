@@ -1,16 +1,22 @@
-<div class="sidebar">
+<div class="sidebar" [ngClass]="{'sidebar-close': isClosed}">
   <div class="sidebar-actions">
-    <h2><img src="../../assets/white-label.png"> Sua empresa</h2>
-    <button><i class="bx bxs-x-square"></i></button>
+    @if (!isClosed) {
+      <h2><img src="../../assets/white-label.png"> Sua empresa</h2>
+      <button><i class="bx bxs-x-square"></i></button>
+    } @else {
+      <button><i class='bx bx-menu'></i></button>
+    }
   </div>
-  <ul>
-    <li>
-      <img src="../../assets/form.png" alt="Formulário">
-      <a href="">Formulário</a>
-    </li>
-    <li>
-      <img src="../../assets/chart.png" alt="Dashboard">
-      <a href="">Dashboard</a>
-    </li>
-  </ul>
+  @if (!isClosed) {
+    <ul>
+      <li>
+        <img src="../../assets/form.png" alt="Formulário">
+        <a href="">Formulário</a>
+      </li>
+      <li>
+        <img src="../../assets/chart.png" alt="Dashboard">
+        <a href="">Dashboard</a>
+      </li>
+    </ul>
+  }
 </div>

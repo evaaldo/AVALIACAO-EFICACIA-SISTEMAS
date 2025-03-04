@@ -9,6 +9,17 @@
   border-radius: 0 25px 25px 0;
 }
 
+.sidebar-close {
+  position: absolute;
+  width: 30px;
+  left: 0px;
+  top: 0;
+  background-color: var(--cinza);
+  height: 100vh;
+  padding: 0em 2em 0em 1.25em;
+  border-radius: 0 25px 25px 0;
+}
+
 .sidebar-actions {
   display: flex;
   justify-content: center;
