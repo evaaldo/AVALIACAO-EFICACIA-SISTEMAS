@@ -79,3 +79,13 @@
   font-size: 1.1em;
   font-weight: 600;
 }
+
+.sidebar-closed-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar-closed-items a {
+  padding: 0em !important;
+}
