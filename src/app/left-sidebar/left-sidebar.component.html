@@ -11,20 +11,20 @@
     <ul>
       <li>
         <img src="../../assets/form.png" alt="Formulário">
-        <a href="">Formulário</a>
+        <a [routerLink]="['/']" routerLinkActive="router-link-active" >Formulário</a>
       </li>
       <li>
         <img src="../../assets/chart.png" alt="Dashboard">
-        <a href="">Dashboard</a>
+        <a [routerLink]="['/dashboard']" routerLinkActive="router-link-active" >Dashboard</a>
       </li>
     </ul>
   } @else {
     <ul class="sidebar-closed-items">
       <li>
-        <a href=""><img src="../../assets/form.png" alt="Formulário"></a>
+        <a [routerLink]="['/']" routerLinkActive="router-link-active" ><img src="../../assets/form.png" alt="Formulário"></a>
       </li>
       <li>
-        <a href=""><img src="../../assets/chart.png" alt="Dashboard"></a>
+        <a [routerLink]="['/dashboard']" routerLinkActive="router-link-active" ><img src="../../assets/chart.png" alt="Dashboard"></a>
       </li>
     </ul>
   }
