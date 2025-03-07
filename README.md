@@ -13,7 +13,7 @@
 **br:** Use o seguinte link para acessar o repositório: [Repositório no Dockerfile](https://hub.docker.com/repository/docker/evaaldo/avaliacao-eficacia-treinamento/general) <br/>
 **en:** Use the following link to access the repository: [Dockerfile Repository](https://hub.docker.com/repository/docker/evaaldo/avaliacao-eficacia-treinamento/general)
 
-## 🚀 Subindo o container
+## 🚀 Subindo o container com docker-compose
 
 ```sh
 docker-compose up --build -d # Inicia o container
