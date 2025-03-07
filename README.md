@@ -1,7 +1,7 @@
 # Avaliação de Eficácia de Treinamentos
 
-**br:** Um formulário para registrar a eficácia dos treinamentos feitos no Grupo 3corações.
-**en:** A form to register the effectiveness of trainings conducted at Grupo 3corações.
+**br:** Um formulário para registro de eficácia de sistemas feitos dentro do Grupo 3corações
+**en:** A form to register the effectiveness of system made at Grupo 3corações.
 
 ## 🐋 Docker
 
