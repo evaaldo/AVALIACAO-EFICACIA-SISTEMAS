@@ -1,13 +1,13 @@
 @if (inputType == "text")
 {
   <div class="form-group">
-    <input type="text" [name]="inputId" [id]="inputId" [placeholder]="placeholder">
+    <input type="text" [attr.name]="inputId" [id]="inputId" [placeholder]="placeholder" [value]="value" (input)="onInputChange($event)">
   </div>
 }
 @else if (inputType == "textarea")
 {
   <div class="form-group">
-    <textarea rows="5" [name]="inputId" [id]="inputId" [placeholder]="placeholder"></textarea>
+    <textarea rows="5" [attr.name]="inputId" [id]="inputId" [placeholder]="placeholder"></textarea>
   </div>
 }
 @else if (inputType == "select")
@@ -17,8 +17,8 @@
       <option value="">Classificação do sistema</option>
       @for (selectValue of selectValues; track selectValue.value)
       {
-        <option value="selectValue.value">selectValue.text</option>
-        <option value="selectValue.value">selectValue.text</option>
+        <option [value]="selectValue.value">selectValue.text</option>
+        <option [value]="selectValue.value">selectValue.text</option>
       }
     </select>
   </div>

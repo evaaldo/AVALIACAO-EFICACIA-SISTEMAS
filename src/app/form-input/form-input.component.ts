@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { ISelect } from '../interfaces/ISelect';
 
 @Component({
@@ -13,4 +13,13 @@ export class FormInputComponent {
   @Input({ required: true }) inputType!: string;
   @Input() placeholder?: string;
   @Input() selectValues?: ISelect[];
+  @Input() value: any = '';
+
+  @Output() valueChange = new EventEmitter<any>();
+
+  onInputChange(event: Event) {
+    const target = event.target as HTMLInputElement;
+    this.value = target.value;
+    this.valueChange.emit(this.value);
+  }
 }
