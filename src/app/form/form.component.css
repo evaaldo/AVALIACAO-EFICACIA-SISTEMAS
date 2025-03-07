@@ -1,0 +1,23 @@
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+
+form .cols {
+  display: flex;
+  gap: 1.5em;
+}
+
+form .cols .col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+form .actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}

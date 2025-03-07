@@ -8,27 +8,3 @@ main {
   justify-content: center;
   align-items: center;
 }
-
-main form {
-  display: flex;
-  flex-direction: column;
-  gap: 3em;
-}
-
-main form .cols {
-  display: flex;
-  gap: 1.5em;
-}
-
-main form .cols .col {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5em;
-}
-
-main form .actions {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2em;
-}
