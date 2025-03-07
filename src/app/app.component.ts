@@ -7,11 +7,12 @@ import { LeftSidebarComponent } from './left-sidebar/left-sidebar.component';
 import { FormService } from './form.service';
 import { FormsModule } from '@angular/forms';
 import { FormComponent } from './form/form.component';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [FormsModule, FormComponent, CommonModule, HeaderComponent, LeftSidebarComponent],
+  imports: [RouterOutlet, FormsModule, FormComponent, CommonModule, HeaderComponent, LeftSidebarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
