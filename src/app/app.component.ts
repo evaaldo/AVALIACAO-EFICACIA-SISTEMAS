@@ -12,7 +12,7 @@ import { RouterOutlet } from '@angular/router';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, FormsModule, FormComponent, CommonModule, HeaderComponent, LeftSidebarComponent],
+  imports: [RouterOutlet, FormsModule, CommonModule, HeaderComponent, LeftSidebarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
