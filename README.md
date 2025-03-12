@@ -16,6 +16,6 @@
 ## 🚀 Subindo o container
 
 ```sh
-docker-compose up --build -d # Inicia o container
-docker-compose down # Para e remove o container
+docker-compose up --build -d
+docker-compose down
 ```
