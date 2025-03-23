@@ -28,19 +28,13 @@ export class FormComponent {
   constructor(private formService: FormService) { }
 
   onSubmit() {
-    this.formService.submitData({
-      nomeSistema: this.nomeSistema,
-      cicloEntrega: this.cicloEntrega,
-      diretoria: this.diretoria,
-      ganhosPorProcesso: this.ganhosPorProcesso,
-      valorMedioHora: this.valorMedioHora,
-      descricaoSistema: this.descricaoSistema,
-      areaImpactada: this.areaImpactada,
-      horasDesenvolvimento: this.horasDesenvolvimento,
-      unidade: this.unidade,
-      repeticao: this.repeticao,
-      classificacao: this.classificacao,
-      descricaoGanhos: this.descricaoGanhos
-    });
+    this.formService.getHelloWorld().subscribe({
+      next: (data) => {
+        console.log(data);
+      },
+      error: (error) => {
+        console.log(error);
+      }
+    })
   };
 }
