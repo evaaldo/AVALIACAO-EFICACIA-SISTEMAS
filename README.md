@@ -1,6 +1,6 @@
 # Avaliação de Eficácia de Sistemas
 
-<small>Em Andamento📚</small>
+<small>Em Andamento⏳</small>
 
 **br:** Um formulário para registro de eficácia de sistemas feitos dentro do Grupo 3corações.<br/>
 **en:** A form to register the effectiveness of systems made at Grupo 3corações.
